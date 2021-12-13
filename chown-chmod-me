@@ -46,5 +46,5 @@ if [ "$#" -eq 0 ]; then
 	exit 0
 fi
 
-chown -R "$(id -un):$(id -gn)" "$@"
-chmod -R go= "$@"
+sudo chown -R "$(id -un):$(id -gn)" "$@"
+sudo chmod -R go= "$@"
